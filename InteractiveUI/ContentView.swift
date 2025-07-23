@@ -12,10 +12,21 @@ struct ContentView: View {
         VStack {
             Text("What is your name?")
                 .font(.title)
+            TextField("Type your name here", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                .multilineTextAlignment(.center)
+                .font(.title)
+                .border(Color.gray, width: 1)
+                .padding()
+            Button("Submit name") {
+            }//closes button
+            .font(.title2)
+            .buttonStyle(.borderedProminent)
+            .tint(.purple)
+            
+            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
         }
-        .padding()
     }
-}
+    }
 
 #Preview {
     ContentView()
